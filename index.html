@@ -27,11 +27,17 @@
 
 <body>
 	<div class="countryChoose">
-		<img src="img/usa.png"/>
-		<i class="fa fa-angle-down" aria-hidden="true"></i>
+		<img id="coll" src="img/usa.png"/>
+		<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+		<i id="coll" class="fa fa-angle-down" aria-hidden="true"></i>
 	</div>
 	<div class="chat">
 		<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> Chat</a>
+	</div>
+	<div class="collapsedHam">
+		<a href="#">
+			<img src="img/hamburger.png"/>
+		</a>
 	</div>
 	<div class="main-logo">
 		<div class="container-fluid">
@@ -47,9 +53,9 @@
 	  		<li><a href="#">MEN</a></li>
 	  		<li><a href="#">WOMEN</a></li>
 	  		<li><a href="#">WATCH BANDS</a></li>
-	  		<li><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
-	  		<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-	  		<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+	  		<li id="coll"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+	  		<li id="coll"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+	  		<li id="coll"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 	  	</ul>
 	  </div>
 	 </nav>
@@ -88,8 +94,12 @@
 	 	</div>
 	 </div>
 	 <div class="gender">
-	 	<a id="men" href="#">MEN</a>
-	 	<a id="women" href="#">WOMEN</a>
+	 	<div class="container-fluid">
+	 		<div class="row">
+		 	<a class="col-md-6 col-sm-12 col-xs-12" id="men" href="#">MEN</a>
+		 	<a class="col-md-6 col-sm-12 col-xs-12" id="women" href="#">WOMEN</a>
+		 	</div>
+	 	</div>
 	 </div>
 	 <div class="instagram">
 	 	<img src="img/insta.png"/>
@@ -155,6 +165,7 @@
 	 	</ul>
 	 </div>
 	 <div class="email">
+		<div class="container-fluid">
 	 	<h1>Get the latest news from Daniel Wellington</h1>
 	 	<ul>
 	 		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -166,10 +177,11 @@
 	 		<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 	 	</ul>
 	 	<br>
-	 	<div id="emailInput">
+	 	<div id="emailInput" class="row">
 	 		<input type="text" placeholder="Email Address"/>
 	 		<button type="submit">Submit</button>
 	 	</div>
+		</div>
 	 </div>
 	 <div class="partners">
 	 	<div class="container-fluid">
