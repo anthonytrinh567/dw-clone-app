@@ -35,10 +35,11 @@ body {
  Country Panel
 ==========================================*/
 .countryChoose {
-	position: absolute;
-	right: 25px;
+	position: absolute !important;
+	right: 35px;
 	top: 15px;
 	cursor: pointer;
+	z-index: 20;
 }
 
 .countryChoose img {
@@ -48,7 +49,40 @@ body {
 .countryChoose .fa-angle-down {
 	position: absolute;
 	top: 13px;
-	right: -10px;
+	right: 15px;
+}
+
+.countryChoose a {
+	visibility: hidden;
+	color: black;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 630px) {
+	.countryChoose a {
+		visibility: visible;
+	}
+}
+
+/*========================================
+collapsedHam
+==========================================*/
+.collapsedHam {
+	position: absolute !important;
+	top: 15px;
+	left: 15px;
+	visibility: hidden;
+	z-index: 20;
+}
+
+.collapsedHam img {
+	width: 25px;
+}
+
+@media screen and (max-width: 630px) {
+	.collapsedHam {
+		visibility: visible;
+	}
 }
 
 /*=========================================
@@ -61,6 +95,12 @@ body {
 
 .main-logo img {
 	width: 150px !important;
+}
+
+@media screen and (max-width: 630px) {
+	.main-logo img {
+		width: 30% !important;
+	}
 }
 
 /*=========================================
@@ -81,15 +121,17 @@ body {
 
 .main-nav li a {
 	color: white;
+	text-decoration: none;
+	font-family: "Open Sans";
 }
 
-@media screen and (max-width: 768px) {
-	.main-nav {
-		height: auto;
+@media screen and (max-width:630px) {
+	#coll {
+		display: none;
 	}
-	
-	.main-nav li {
-		display: block;
+
+	.main-nav li a {
+		font-size: 2.5vw;
 	}
 }
 
@@ -110,7 +152,7 @@ body {
 
 @media screen and (max-width: 768px) {
 	.underNav h5 {
-		font-size: .6em;
+		font-size: 2vw;
 	}
 }
 
@@ -149,6 +191,20 @@ body {
 	display: inline-block;
 }
 
+@media screen and (max-width:768px) {
+	.mainBack h1 {
+		font-size: 6vw;
+	}
+
+	.mainBack h2 {
+		font-size: 3vw;
+	}
+
+	.mainBack h3 {
+		font-size: 2.7vw;
+	}
+}
+
 /*=========================================
  Sticker
 ==========================================*/
@@ -161,6 +217,12 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	z-index: 1;
+}
+
+@media screen and (max-width:768px) {
+	.sticker {
+		background-size: 100px 100px;
+	}
 }
 
 /*=========================================
@@ -258,6 +320,20 @@ body {
  	margin: 0 auto;
  }
 
+@media screen and (max-width: 768px) {
+	.inner h2 {
+		font-size: 4vw;
+	}
+
+	.inner h1 {
+		font-size: 5vw;
+	}
+
+	.inner p {
+		width: 50px;
+	}
+}
+
  /*=========================================
  	Gender
  ==========================================*/
@@ -265,10 +341,14 @@ body {
 	text-align: center;
 }
 
+.gender .row {
+	text-align: center;
+}
+
 .gender a {
 	display: inline-block;
-	width: 60%;
 	height: 500px;
+	width: 49%;
 	font-size: 2em;
 	color: white;
 	text-decoration: none;
@@ -285,6 +365,17 @@ body {
 	background-image: url('../img/woman.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+	.gender {
+		margin: 0 35px;
+	}
+
+	.gender .row a {
+		height: 300px;
+		width: 100%;
+	}
 }
 
 /*=========================================
@@ -312,12 +403,29 @@ body {
  }
 
  .instagram p {
- 	width: 500px;
  	font-size: 1.2em;
  	line-height: 1.2em;
- 	margin: 0 auto;
+ 	margin: 0 50px;
  	margin-bottom: 5px;
  }
+
+@media screen and (max-width: 768px) {
+	.instgram img {
+		width: 45px;
+	}
+
+	.instagram h1 {
+		font-size: 5vw;
+	}
+
+	.instagram h6 {
+		width: 50px;
+	}
+
+	.instagram p {
+		font-size: 3vw;
+	}
+}
 
  /*=========================================
  	Carousel
@@ -420,6 +528,18 @@ body {
 		display: inline;
 		width: 100%
 	}
+
+	.news h6 {
+		width: 50px;
+	}
+
+	.news h2 {
+		font-size: 3vw;
+	}
+
+	.news h1 {
+		font-size: 4vw;
+	}
 }
 
 .news div img {
@@ -474,12 +594,13 @@ body {
 }
 
 .email h1 {
-	width: 400px;
 	font-size: 2em;
 	font-style: italic;
 	margin-bottom: 40px;
 	color: white;
 	display: inline-block;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 .email li {
@@ -519,6 +640,27 @@ body {
 	background-color: rgba(0,0,0,0);
 	border: 0;
 	color: white;
+}
+
+@media screen and (max-width:768px) {
+	.email h1 {
+		font-size: 3vw;
+	}
+
+	.email #emailInput {
+		border: 0;
+	}
+
+	.email #emailInput input {
+		width: 79.99%;
+		text-align: center;
+	}
+
+	.email #emailInput button {
+		font-size: 1em;
+		border: 1px solid white;
+		margin-top: 10px;
+	}
 }
 
 /*=========================================
@@ -580,14 +722,19 @@ body {
 
 .bottomNav li {
 	display: inline-block;
-	font-size: 1.2em;
 	margin: 0 15px;
 	line-height: 60px;
 }
 
 .bottomNav li a {
 	color: #000;
-	font-size: .6em;
+	font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.bottomNav li a {
+		font-size: 2vw;
+	}
 }
 
  /*=========================================
