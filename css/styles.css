@@ -144,36 +144,36 @@ body {
 /*=========================================
  	Watch Ad
  ==========================================*/
- .watchAd {
+ .watchAdvert {
  	margin-top: -75px;
  	background-color: #f4f4f4;
  	text-align: center;
  	padding: 100px 0;
  }
 
- .watchAd img {
+ .watchAdvert img {
  	margin-left: 200px;
  	width: 400px;
  }
 
  @media screen and (max-width: 992px) {
- 	.watchAd img {
+ 	.watchAdvert img {
  		margin-left: 0;
  	}
 }
 
- .ad-right h2 {
+ .ad-right-side h2 {
  	font-size: 1.5em;
  	font-style: italic;
  }
 
- .ad-right h1 {
+ .ad-right-side h1 {
  	line-height: 2em;
  	font-size: 3.5em;
  	margin-bottom: 15px;
  }
 
-.ad-right a {
+.ad-right-side a {
 	padding: 15px 45px;
 	background-color: rgb(51, 153, 51);
 	color: #fff;
@@ -181,7 +181,7 @@ body {
 	font-size: 1.2em;
 }
 
-.ad-right p {
+.ad-right-side p {
 	margin-top: 40px;
 	font-size: 1.4em;
 	line-height: 1.3em;
@@ -189,23 +189,23 @@ body {
 
 
 @media screen and (max-width: 768px) {
-	.watchAd img {
+	.watchAdvert img {
 		width: 60%;
 	}
 
-	.ad-right h2 {
+	.ad-right-side h2 {
 		font-size: 1em;
 	}
 
-	.ad-right h1 {
+	.ad-right-side h1 {
 		font-size: 1.5em;
 	}
 
-	.ad-right a {
+	.ad-right-side a {
 		font-size: 1em;
 	}
 
-	.ad-right p {
+	.ad-right-side p {
 		font-size: 1.1em;
 	}
 }
