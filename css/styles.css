@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-body {
-	font-family: "Open Sans" !important;
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x:hidden;
 }
 
-@media screen and (max-width:450px) {
+body {
+	font-family: "Open Sans" !important;
 }
 
 * {
@@ -82,7 +85,11 @@ body {
 
 @media screen and (max-width: 768px) {
 	.main-nav {
-		display: none !important;
+		height: auto;
+	}
+	
+	.main-nav li {
+		display: block;
 	}
 }
 
@@ -95,10 +102,16 @@ body {
 	background-color: #f4f4f4;
 }
 
-.underNav {
+.underNav h5 {
 	line-height: 60px;
-	font-size: .9em;
+	font-size: .8em;
 	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+	.underNav h5 {
+		font-size: .6em;
+	}
 }
 
 /*=========================================
@@ -451,18 +464,22 @@ body {
  	Email
  ==========================================*/
 .email {
-	padding: 70px;
+	padding: 70px 0;
 	text-align: center;
 	background-color: rgb(102, 102, 153);
+}
+
+.email .container-fluid {
+	text-align: center;
 }
 
 .email h1 {
 	width: 400px;
 	font-size: 2em;
 	font-style: italic;
-	margin: 0 auto;
 	margin-bottom: 40px;
 	color: white;
+	display: inline-block;
 }
 
 .email li {
@@ -491,7 +508,7 @@ body {
 .email #emailInput input {
 	border: 0;
 	outline: 0;
-	width: 79%;
+	width: 80%;
 	height: 100%;
 	padding: 10px;
 }
