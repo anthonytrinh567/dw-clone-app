@@ -1,0 +1,596 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+	font-family: "Open Sans" !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*=========================================
+ Chat
+==========================================*/
+.chat {
+	position: fixed;
+	background-color: #999999;
+	padding: 15px 25px;
+	border-radius: 20px;
+	bottom: 10px;
+	right: 10px;
+	z-index: 15;
+}
+
+.chat a {
+	color: #fff;
+}
+
+/*=========================================
+ Country Panel
+==========================================*/
+.countryChoose {
+	position: absolute;
+	right: 25px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.countryChoose img {
+	width: 40px;
+}
+
+.countryChoose .fa-angle-down {
+	position: absolute;
+	top: 13px;
+	right: -10px;
+}
+
+/*=========================================
+ Logo
+==========================================*/
+.main-logo {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.main-logo img {
+	width: 150px !important;
+}
+
+/*=========================================
+ Nav
+==========================================*/
+.main-nav {
+	text-align: center;
+	background-color: #4e5874;
+	height: 60px;
+}
+
+.main-nav li {
+	display: inline-block;
+	font-size: 1em;
+	margin: 0 15px;
+	line-height: 60px;
+}
+
+.main-nav li a {
+	color: white;
+}
+
+/*=========================================
+ Under Nav
+==========================================*/
+.underNav {
+	text-align: center;
+	height: 60px;
+	background-color: #f4f4f4;
+}
+
+.underNav {
+	line-height: 60px;
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+
+/*=========================================
+ Background
+==========================================*/
+.mainBack {
+	background-image: url('https://asset1.danielwellington.com/media/wysiwyg/Widgets/Background/free-shipping-dark.jpg');
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.mainBack * {
+	color: white;
+}
+
+.mainBack h1 {
+	font-size: 3em;
+}
+
+.mainBack h2 {
+	margin-top: 15px;
+	font-style: italic !important;
+	font-size: 1.5em;
+}
+
+.mainBack h3 {
+	margin-top: 40px;
+	font-size: 1.3em;
+	padding: 20px 35px;
+	border: 1px solid white;
+	display: inline-block;
+}
+
+/*=========================================
+ Sticker
+==========================================*/
+.sticker {
+	position: relative;
+	margin-top: -75px;
+	background-image: url('../img/sticker.png');
+	height: 150px;
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+}
+
+/*=========================================
+ 	Watch Ad
+ ==========================================*/
+ .watchAd {
+ 	margin-top: -75px;
+ 	background-color: #f4f4f4;
+ 	text-align: center;
+ 	padding: 100px 0;
+ }
+
+ .watchAd img {
+ 	margin-left: 200px;
+ 	width: 400px;
+ }
+
+ @media screen and (max-width: 992px) {
+ 	.watchAd img {
+ 		margin-left: 0;
+ 	}
+}
+
+ .ad-right h2 {
+ 	font-size: 1.5em;
+ 	font-style: italic;
+ }
+
+ .ad-right h1 {
+ 	line-height: 2em;
+ 	font-size: 3.5em;
+ 	margin-bottom: 15px;
+ }
+
+.ad-right a {
+	padding: 15px 45px;
+	background-color: rgb(51, 153, 51);
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.ad-right p {
+	margin-top: 40px;
+	font-size: 1.4em;
+	line-height: 1.3em;
+}
+
+
+@media screen and (max-width: 768px) {
+	.watchAd img {
+		width: 60%;
+	}
+
+	.ad-right h2 {
+		font-size: 1em;
+	}
+
+	.ad-right h1 {
+		font-size: 1.5em;
+	}
+
+	.ad-right a {
+		font-size: 1em;
+	}
+
+	.ad-right p {
+		font-size: 1.1em;
+	}
+}
+
+/*=========================================
+ 	Ad Inform
+ ==========================================*/
+ .adInform {
+ 	padding: 70px 0;
+ 	text-align: center;
+ }
+
+
+ .inner h2 {
+ 	font-size: 1.5em;
+ 	margin-bottom: 15px;
+ 	color: #aaa;
+ }
+
+ .inner h1 {
+ 	font-size: 2.7em;
+ 	margin-bottom: 30px;
+ }
+
+ .inner p {
+ 	border: 1px solid #aaa;
+ 	width: 80px;
+ 	margin: 0 auto;
+ }
+
+ /*=========================================
+ 	Gender
+ ==========================================*/
+.gender {
+	text-align: center;
+}
+
+.gender a {
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	font-size: 2em;
+	color: white;
+	text-decoration: none;
+	line-height: 500px;
+}
+
+#men {
+	background-image: url('../img/men.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#women {
+	background-image: url('../img/woman.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*=========================================
+ 	Instagram
+ ==========================================*/
+ .instagram {
+ 	padding-top: 50px;
+ 	text-align: center;
+ 	margin-bottom: 30px;
+ }
+
+ .instagram img {
+ 	width: 60px;
+ 	margin-bottom: 30px;
+ }
+
+ .instagram h1 {
+ 	font-size: 2.5em;
+ }
+
+ .instagram h6 {
+	border: 1px solid #aaa;
+ 	width: 80px;
+ 	margin: 30px auto;
+ }
+
+ .instagram p {
+ 	width: 500px;
+ 	font-size: 1.2em;
+ 	line-height: 1.2em;
+ 	margin: 0 auto;
+ 	margin-bottom: 5px;
+ }
+
+ /*=========================================
+ 	Carousel
+ ==========================================*/
+.gallery {
+	margin: 0 150px;
+	height: 400px;
+	overflow-y: hidden;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	.gallery {
+		margin: 0 10px;
+	}
+}
+
+.gallery button {
+	width: 150px;
+	background-color: rgba(0,0,0,0);
+}
+
+.gallery button:hover {
+	background-color: rgba(256,256,256,.7);
+}
+
+.slick-prev {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	position: absolute;
+	border: 0;
+	font-size: 5em;
+}
+
+.slick-next {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	position: absolute;
+	border: 0;
+	font-size: 5em;
+}
+
+
+.gallery img {
+	width: 400px;
+}
+
+ /*=========================================
+ 	News
+ ==========================================*/
+ .news {
+ 	padding-top: 50px;
+ 	text-align: center;
+ }
+
+ .news h6 {
+ 	border: 1px solid #aaa;
+ 	width: 80px;
+ 	margin: 0 auto;
+}
+
+ .news h2 {
+ 	font-size: 2em;
+ 	margin-bottom: 10px;
+ }
+
+ .news h1 {
+ 	font-size: 3.5em;
+  	margin-bottom: 30px;
+ }
+
+ .news .row {
+ 	padding: 0;
+ 	margin: 0;
+ 	display: flex;
+ 	justify-content: center;
+ 	margin-top: 15px;
+ }
+
+.news1,.news2,.news3{
+	padding-left: 0;
+	padding-right: 0;
+	display: inline-block;
+	background-color: lightgray;
+	width: 30%;
+	margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+	 .news .row {
+	 	margin-top: 15px;
+	 	display: inline;
+	 }
+	.news1,.news2,.news3{
+		margin-top: 15px;
+		display: inline;
+		width: 100%
+	}
+}
+
+.news div img {
+	width: 100%;
+}
+
+.news .desc {
+	text-align: left;
+	padding: 15px;
+}
+
+.news .desc h4 {
+	line-height: 2em;
+	font-size: .8em;
+	color: gray;
+}
+
+.news .desc h3 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 1.4em;
+}
+
+.news .desc h5 {
+ 	border: 1px solid #aaa;
+ 	width: 80px;
+ 	margin-bottom: 15px;
+}
+
+.news .desc p {
+	font-size: .8em;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+}
+
+.news .desc a {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*=========================================
+ 	Email
+ ==========================================*/
+.email {
+	padding: 70px;
+	text-align: center;
+	background-color: rgb(102, 102, 153);
+}
+
+.email h1 {
+	width: 400px;
+	font-size: 2em;
+	font-style: italic;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.email li {
+	display: inline-block;
+	margin: 0 -8px;
+	width: 50px;
+	height: 50px;
+}
+
+.email li a {
+	border:1px solid white;
+	border-radius: 100%;
+	padding: 0 5px;
+	font-size: 1.2em;
+	color: white;
+}
+
+.email #emailInput {
+	margin-top: 2px;
+	border: 1px solid white;
+	display: inline-block;
+	width: 500px;
+	height: 50px;
+}
+
+.email #emailInput input {
+	border: 0;
+	outline: 0;
+	width: 80%;
+	height: 100%;
+	padding: 10px;
+}
+
+.email #emailInput button {
+	width: 19%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	border: 0;
+	color: white;
+}
+
+/*=========================================
+ 	Partners
+ ==========================================*/
+.partners {
+	background-image: url('../img/partner.jpg');
+	height: 400px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	padding-top: 150px;
+	margin-bottom: 40px;
+}
+
+.partners select {
+	width: 200px;
+	padding: 10px 5px;
+}
+
+.partners h4 {
+	color: white;
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.partners img {
+	width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	.partners {
+		padding-top: 80px;
+		height: 600px;
+		padding-bottom: 80px;
+	}
+
+	.partners .row div {
+		margin-top: 15px;
+	}
+
+	.partners img {
+		width: 30%;
+	}
+}
+
+ /*=========================================
+ 	Bottom Nav
+ ==========================================*/
+
+ .bottomNav {
+	text-align: center;
+	background-color: lightgray;
+	height: 60px;
+	margin-top: 50px;
+}
+
+.bottomNav li {
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 0 15px;
+	line-height: 60px;
+}
+
+.bottomNav li a {
+	color: #000;
+	font-size: .6em;
+}
+
+ /*=========================================
+ 	Priv
+ ==========================================*/
+ .priv {
+ 	margin-top: 40px;
+	text-align: center;
+	background-color: white;
+	height: 60px;
+	border: 1px solid lightgray;
+}
+
+.priv li {
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 0 15px;
+	line-height: 60px;
+}
+
+.priv li a {
+	color: black;
+	font-size: .8em;
+}
+
+ /*=========================================
+ 	Footer
+ ==========================================*/
+ .footer {
+ 	padding: 40px 0;
+ 	text-align: center;
+ }
