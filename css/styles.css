@@ -392,6 +392,13 @@ collapsedHam
 }
 
 @media screen and (max-width: 990px) {
+	.gender {
+		padding: 0 10%;
+	}
+
+	.gender a {
+		padding: 30% 0;
+	}
 	#men, #women {
 		background-size: cover;
 	}
