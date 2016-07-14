@@ -15,6 +15,33 @@ body {
 }
 
 /*=========================================
+ topNav
+==========================================*/
+.topNav {
+	text-align: center;
+	padding: 30px 0;
+	display: none;
+}
+
+.topNav a {
+	text-decoration: none;
+	font-size: 2em;
+	color: black;
+}
+
+@media screen and (max-width: 630px) {
+	.topNav {
+		padding: 30px;
+		display: inline;
+	}
+
+	.topNav a {
+		font-size: 4vw;
+	}
+}
+
+
+/*=========================================
  Chat
 ==========================================*/
 .chat {
@@ -71,8 +98,8 @@ collapsedHam
 	position: absolute !important;
 	top: 15px;
 	left: 15px;
+	z-index: 15;
 	visibility: hidden;
-	z-index: 20;
 }
 
 .collapsedHam img {
@@ -80,7 +107,7 @@ collapsedHam
 }
 
 @media screen and (max-width: 630px) {
-	.collapsedHam {
+	.collapsedHam #ham {
 		visibility: visible;
 	}
 }
@@ -339,42 +366,34 @@ collapsedHam
  ==========================================*/
 .gender {
 	text-align: center;
-}
-
-.gender .row {
-	text-align: center;
+	padding: 0 150px;
 }
 
 .gender a {
-	display: inline-block;
-	height: 500px;
-	width: 49%;
-	font-size: 2em;
-	color: white;
 	text-decoration: none;
-	line-height: 500px;
+	color: black;
+	font-size: 2em;
+	padding: 250px 0;
+	margin-bottom: 15px;
 }
 
 #men {
 	background-image: url('../img/men.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 95%;
+	background-position: center;
 }
 
 #women {
 	background-image: url('../img/woman.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 95%;
+	background-position: center;
 }
 
-@media screen and (max-width: 768px) {
-	.gender {
-		margin: 0 35px;
-	}
-
-	.gender .row a {
-		height: 300px;
-		width: 100%;
+@media screen and (max-width: 990px) {
+	#men, #women {
+		background-size: cover;
 	}
 }
 
@@ -622,20 +641,20 @@ collapsedHam
 	margin-top: 2px;
 	border: 1px solid white;
 	display: inline-block;
-	width: 100%;
+	width: 30%;
 	height: 50px;
 }
 
 .email #emailInput input {
 	border: 0;
 	outline: 0;
-	width: 80%;
+	width: 70%;
 	height: 100%;
 	padding: 10px;
 }
 
 .email #emailInput button {
-	width: 19%;
+	width: 29%;
 	height: 100%;
 	background-color: rgba(0,0,0,0);
 	border: 0;
@@ -649,17 +668,21 @@ collapsedHam
 
 	.email #emailInput {
 		border: 0;
-	}
-
-	.email #emailInput input {
-		width: 79.99%;
 		text-align: center;
 	}
 
+	.email #emailInput input {
+		width: 100%;
+		text-align: center;
+		font-size: 3vw;
+	}
+
 	.email #emailInput button {
-		font-size: 1em;
+		font-size: .8em;
 		border: 1px solid white;
 		margin-top: 10px;
+		padding: 5px 15px;
+		width: 100%;
 	}
 }
 
