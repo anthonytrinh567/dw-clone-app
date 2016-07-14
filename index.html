@@ -26,6 +26,19 @@
 </head>
 
 <body>
+	<div class="topNav container-fluid">
+		<div class="row">
+			<ul class="collapse" id="collapse-menu">
+		  		<li class="col-sm-12 col-xs-12"><a href="#">COLLECTIONS</a></li>
+		  		<li class="col-sm-12 col-xs-12"><a href="#">MEN</a></li>
+		  		<li class="col-sm-12 col-xs-12"><a href="#">WOMEN</a></li>
+		  		<li class="col-sm-12 col-xs-12"><a href="#">WATCH BANDS</a></li>
+		  		<li class="col-sm-12 col-xs-12"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+		  		<li class="col-sm-12 col-xs-12"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+		  		<li class="col-sm-12 col-xs-12"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
 	<div class="countryChoose">
 		<img id="coll" src="img/usa.png"/>
 		<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -35,7 +48,7 @@
 		<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> Chat</a>
 	</div>
 	<div class="collapsedHam">
-		<a href="#">
+		<a data-toggle="collapse" data-target="#collapse-menu" expanded="false" id="ham" href="#">
 			<img src="img/hamburger.png"/>
 		</a>
 	</div>
@@ -178,8 +191,8 @@
 	 	</ul>
 	 	<br>
 	 	<div id="emailInput" class="row">
-	 		<input type="text" placeholder="Email Address"/>
-	 		<button type="submit">Submit</button>
+	 		<input class="col-md-8 col-sm-12 col-xs-12" type="text" placeholder="Email Address"/>
+	 		<button class="col-md-4 col-sm-12 col-xs-12" type="submit">Submit</button>
 	 	</div>
 		</div>
 	 </div>
